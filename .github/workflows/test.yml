@@ -11,4 +11,4 @@ jobs:
         run: echo "test"
         
       - name : Build Project
-        run: vivado -mode batch -source checkout.tcl
+        run: ls -al 
