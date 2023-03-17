@@ -8,4 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        run: mkdir vivado && cd vivado
+        run: echo "test"
+        
+      - name : Build Project
+        run: vivado -mode batch -source checkout.tcl
