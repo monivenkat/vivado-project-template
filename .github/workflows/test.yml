@@ -12,7 +12,7 @@ jobs:
         
       - name : Install vivado 
         run: |
-          chmod +x vivado_installer.run  
+          sudo chmod +x vivado_installer.run  
           pwd && ls
           sudo ./vivado_installer.run --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --noexec --target vivado_installer
 
