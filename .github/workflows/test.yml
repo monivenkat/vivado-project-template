@@ -12,5 +12,7 @@ jobs:
         
       - name : Install vivado 
         run: |
-          wget -qO vivado_installer.run https://www.xilinx.com/bin/public/openDownload?filename=Xilinx_Vivado_SDK_2021.1_0526_2254_Lin64.bin && ls
-          
+          chmod +x vivado_installer.run  
+          pwd && ls
+          sudo ./vivado_installer.run --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --noexec --target vivado_installer
+
