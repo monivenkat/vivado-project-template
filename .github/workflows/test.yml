@@ -1,0 +1,11 @@
+name: vivado
+'on':
+  push:
+    branches:
+      - feature/testing
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "test"
