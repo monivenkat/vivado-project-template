@@ -15,6 +15,7 @@ jobs:
           mkdir vivado 
           cd vivado 
           wget -qO vivado_installer.run https://www.xilinx.com/bin/public/openDownload?filename=Xilinx_Vivado_SDK_2021.1_0526_2254_Lin64.bin
+          chmod +x vivado_installer.run 
           ./vivado_installer.run --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --noexec --target vivado_installer
 
 
