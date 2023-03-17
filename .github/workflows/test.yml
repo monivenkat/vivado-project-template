@@ -10,5 +10,5 @@ jobs:
       - name: test
         run: echo "test"
         
-      - name : Build Project
-        run: ls -al 
+      - name : Install vivado 
+        run: wget https://www.xilinx.com/bin/public/openDownload?filename=Xilinx_Vivado_SDK_2021.1_0526_2254.tar.gz && tar xvf Xilinx_Vivado_SDK_2021.1_0526_2254.tar.gz && ./xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install --config ./install_config.txt  
