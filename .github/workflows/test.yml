@@ -4,7 +4,7 @@ name: vivado
     branches:
       - feature/testing
 jobs:
-  my-job:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - name: test
@@ -15,7 +15,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget
           wget -q -O vivado_installer.run "https://www.xilinx.com/bin/public/openDownload?filename=Xilinx_Vivado_SDK_2021.1_0526_2254_Lin64.bin"
-          sudo chmod +x vivado_installer.run
-          sudo ./vivado_installer.run --agree XilinxEULA,3rdPartyEULA,WebTalkTerms --noexec --target vivado_installer
-          sudo chmod +x vivado_installer/xsetup
-          sudo ./vivado_installer/xsetup --agree XilinxEULA,3rdPartyEULA,WebTalkTerms --batch Install --config vivado_config.txt
+  Job2:
+    name: demo
+    runs-on: ubuntu-latest
+    steps:
+      - name: test1
+        run : echo "demo2"
